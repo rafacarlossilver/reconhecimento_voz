@@ -1,3 +1,8 @@
 from gtts import gTTS
-tts = gTTS('Oi, eu sou a Vick', lang="pt-br")
-tts.save('audios/hello.mp3')
+from subprocess import call
+def cria_audio(audio):
+    tts = gTTS(audio, lang="pt-br")
+    tts.save('audios/bem_vindo.mp3')
+    call(['mpg123',"audios/bem_vindo.mp3"])
+
+cria_audio("Oi, eu sou a Vick")
