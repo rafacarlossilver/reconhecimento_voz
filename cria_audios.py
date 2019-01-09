@@ -5,4 +5,4 @@ def cria_audio(audio):
     tts.save('audios/bem_vindo.mp3')
     call(['mpg123',"audios/bem_vindo.mp3"])
 
-cria_audio("Oi, eu sou a Vick")
+cria_audio("ola Nelson tudo bom, fassa como os turcos")
